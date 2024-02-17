@@ -4,8 +4,8 @@ import {HttpClient} from "@angular/common/http";
 @Injectable()
 
 export class TelegramSenderService {
-  private botToken:string = '6918204238:AAEqklEAKM12CR1ozK3eHdsUAfLP7pQiFd8';
-  private chatId:string = '-1002023825347';
+  private botToken:string = '*';
+  private chatId:string = '*';
   private threadId:string = '41';
   constructor(private http: HttpClient) { }
   sendFrom(message: string) {
