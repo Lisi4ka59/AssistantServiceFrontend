@@ -1,0 +1,15 @@
+<form id="requestForm" [formGroup]="textForm" (ngSubmit)="onSubmit()">
+  <div class="formGroup">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" formControlName="name" placeholder="Name">
+  </div>
+  <div class="formGroup">
+    <label for="email">Почта:</label>
+    <input type="email" id="email" formControlName="email" placeholder="Email">
+  </div>
+  <div class="formGroup">
+    <label for="message">Сообщение:</label>
+    <textarea formControlName="message" id="message" placeholder="Message"></textarea>
+  </div>
+  <button type="submit" [disabled]="!textForm.valid">Отправить</button>
+</form>
