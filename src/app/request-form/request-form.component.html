@@ -1,15 +1,106 @@
 <form id="requestForm" [formGroup]="textForm" (ngSubmit)="onSubmit()">
-  <div class="formGroup">
-    <label for="name">Имя:</label>
-    <input type="text" id="name" formControlName="name" placeholder="Name">
+  <div id="inputForm">
+
+    <span class="formGroup p-float-label">
+      <input pInputText id="name" formControlName="name" [ngClass]="{ 'ng-invalid': textForm.get('name')?.errors }"/>
+      <label for="name">Имя</label>
+    </span>
+
+    <span class="formGroup p-float-label">
+      <input pInputText id="email" formControlName="email" [ngClass]="{ 'ng-invalid': textForm.get('email')?.errors }"/>
+      <label for="email">Электронная почта</label>
+    </span>
+
+
+    <span class="formGroup p-float-label">
+      <p-inputMask mask="+9 (999) 999-9999" id="phoneNumber" formControlName="phoneNumber"
+                   [ngClass]="{ 'ng-invalid': textForm.get('phoneNumber')?.errors }"></p-inputMask>
+      <label for="phoneNumber">Номер телефона</label>
+    </span>
+
+    <span class="formGroup" id="callMethod">
+      <div class="formGroup">
+        Как лучше с Вами связаться:
+      </div>
+      <div class="flex align-items-center">
+        <p-checkbox formControlName="callMethodPhone" label="Телефон" name="method" value="телефон"></p-checkbox>
+      </div>
+      <div class="flex align-items-center">
+        <p-checkbox formControlName="callMethodEmail" label="Электронная почта" name="method" value="электронную почту"></p-checkbox>
+      </div>
+      <div class="flex align-items-center">
+        <p-checkbox formControlName="callMethodTelegram" label="Telegram" name="method" value="telegram"></p-checkbox>
+      </div>
+      <div class="flex align-items-center">
+        <p-checkbox formControlName="callMethodWhatsApp" label="WhatsApp" name="method" value="whatsApp"></p-checkbox>
+      </div>
+      <div class="flex align-items-center">
+        <p-checkbox formControlName="callMethodViber" label="Viber" name="method" value="viber"></p-checkbox>
+      </div>
+    </span>
+
+    <span class="formGroup" style="margin-right: 0">
+
+      <div>
+        Какой тип ассистента Вам нужен:
+      </div>
+      <div class="cardDiv">
+        <div class="cardStyleDiv">
+      <p-card header="Advanced Card" subheader="Card Subheader">
+    <ng-template pTemplate="header">
+        <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png"/>
+    </ng-template>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error!
+    </p>
+    <ng-template pTemplate="footer">
+        <p-checkbox class="choseButton" label="Выбрать" formControlName="assistantTypePersonal" value="личный"></p-checkbox>
+    </ng-template>
+</p-card>
+          </div>
+<div class="cardStyleDiv">
+              <p-card header="Advanced Card" subheader="Card Subheader">
+    <ng-template pTemplate="header">
+        <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png"/>
+    </ng-template>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error!
+    </p>
+    <ng-template pTemplate="footer">
+        <p-checkbox class="choseButton" label="Выбрать" formControlName="assistantTypeHybrid" value="смешанный"></p-checkbox>
+    </ng-template>
+</p-card>
+</div>
+<div class="cardStyleDiv">
+              <p-card header="Advanced Card" subheader="Card Subheader">
+    <ng-template pTemplate="header">
+        <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png"/>
+    </ng-template>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error! eoruhfoaiewfbasbufieopebhfijrodpsrdj hijedae[odbknieodpaoidfbjgijpreofpfcj
+    </p>
+    <ng-template pTemplate="footer">
+        <p-checkbox class="choseButton" label="Выбрать" formControlName="assistantTypeBusiness" value="бизнес"></p-checkbox>
+    </ng-template>
+</p-card>
+</div>
+      </div>
+    </span>
+
+    <span class="formGroup">
+      <p-checkbox formControlName="personal" [binary]="true" inputId="binary"></p-checkbox>
+      <label for="personal">Я даю согласие на </label>
+    <a href="https://angular.dev/" id="personal" target="_blank"
+       rel="noopener noreferrer">обработку персональных данных</a>
+    </span>
+
+
+    <span class="formGroup">
+      <p-button label="Отправить" [disabled]="!textForm.valid" (onClick)="onSubmit()"></p-button>
+    </span>
+
+
   </div>
-  <div class="formGroup">
-    <label for="email">Почта:</label>
-    <input type="email" id="email" formControlName="email" placeholder="Email">
-  </div>
-  <div class="formGroup">
-    <label for="message">Сообщение:</label>
-    <textarea formControlName="message" id="message" placeholder="Message"></textarea>
-  </div>
-  <button type="submit" [disabled]="!textForm.valid">Отправить</button>
 </form>
+
+

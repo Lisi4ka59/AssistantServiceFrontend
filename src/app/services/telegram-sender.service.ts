@@ -8,8 +8,17 @@ export class TelegramSenderService {
   private chatId:string = '-1002023825347';
   private threadId:string = '41';
   constructor(private http: HttpClient) { }
-  sendFrom(message: string) {
-    const url:string = `https://api.telegram.org/bot${this.botToken}/sendMessage?chat_id=${this.chatId}&text=${message}&message_thread_id=${this.threadId}`;
-    return this.http.get(url);
+  sendForm(message: string) {
+    //url для отправки get запросом
+    //const url:string = "https://api.telegram.org/bot" + this.botToken + "/sendMessage?chat_id=" + this.chatId + "&text=" + message + "&message_thread_id=" + this.threadId;
+    const url:string = "https://api.telegram.org/bot" + this.botToken + "/sendMessage";
+
+    const data = {
+      chat_id: this.chatId,
+      text: message,
+      message_thread_id: this.threadId
+    };
+    return this.http.post(url, data);
   }
 }
+

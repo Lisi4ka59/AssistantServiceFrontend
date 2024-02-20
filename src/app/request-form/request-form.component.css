@@ -1,0 +1,30 @@
+
+#inputForm {
+  border: solid 2px blue;
+  position: relative;
+  width: 60%;
+  height: 500px;
+  margin-left: 20%;
+}
+.formGroup {
+  display: block;
+  margin-top: 3%;
+  margin-right: 1%;
+}
+.cardDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cardStyleDiv {
+  width: 30%;
+}
+.choseButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border: solid #5487ff 2px;
+  border-radius: 10px;
+  background-color: rgba(84, 135, 255, 0.21);
+}
