@@ -1,0 +1,37 @@
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 21.6vh;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 253, 253, 0.96), rgba(255, 253, 253, 0));
+
+}
+
+#headerMenu {
+  position: absolute;
+  width: 86vw;
+  left: 7vw;
+  top: 6.6vh;
+  height: 4.1vmin;
+  border: 2px solid black;
+}
+
+#companyLogo {
+  position: absolute;
+  width: 13.4vw;
+  height: 4.1vmin;
+  left: 0;
+  top: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4vmin;
+  line-height: 2.8vmin;
+
+  color: #1E1E1E;
+
+
+}

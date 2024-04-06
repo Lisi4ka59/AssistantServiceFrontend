@@ -18,17 +18,6 @@
 
 }
 
-#header {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 21.6vh;
-  z-index: 1;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 253, 253, 0.96), rgba(255, 253, 253, 0));
-
-}
-
 .shadowButton {
   box-shadow: 0 43px 17px rgba(0, 0, 0, 0.01), 0 24px 14px rgba(0, 0, 0, 0.05), 0 11px 11px rgba(0, 0, 0, 0.09), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
@@ -152,7 +141,7 @@
   height: 4.9vmin;
   left: calc(6.9vw + 27.4vmin + 3.4vmin);
   top: calc(33.5vh + 11.4vmin + 1.27vmin + 9.4vmin + 3vmin);
-  background: white;
+  background: #ffffff;
   border-radius: 1vmin;
   z-index: 10;
 }
