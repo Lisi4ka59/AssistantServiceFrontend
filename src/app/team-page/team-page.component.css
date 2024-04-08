@@ -1,6 +1,6 @@
 #teamPage {
   position: relative;
-  height: 100vh;
+  height: 100vmin;
   width: 100vw;
 }
 
@@ -9,7 +9,7 @@
   width: 30vw;
   height: 7.6vmin;
   left: 35vw;
-  top: 7.3vh;
+  top: 7.3vmin;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@
   width: 42.3vw;
   height: 0;
   left: 28.8vw;
-  top: calc(7.3vh + 7.6vmin + 1.8vmin);
+  top: calc(7.3vmin + 7.6vmin + 1.8vmin);
 
   border: 0.2vmin solid #00A3E9;
 
@@ -43,7 +43,7 @@
   width: 86vw;
   height: 9.4vmin;
   left: 7vw;
-  top: calc(7.3vh + 7.6vmin + 1.8vmin + 4.1vmin);
+  top: calc(7.3vmin + 7.6vmin + 1.8vmin + 4.1vmin);
 
   font-family: 'Montserrat', system-ui;
   font-style: normal;
@@ -52,6 +52,136 @@
   line-height: 2.3vmin;
 
   color: #000000;
+}
+
+/*.p-carousel .p-carousel-item .p-carousel-item-active .p-grid {*/
+/*  justify-content: center;*/
+/*}*/
+.p-carousel {
+  width: 86%;
+  margin:0 auto;
+}
+
+#tmCard {
+  display: flex;
+  justify-content: center;
+}
+
+.teamCard {
+  margin-top: 35.5vmin;
+  width: 28.6vmin;
+
+}
+
+.cardImage {
+  border-radius: 50%;
+  position: relative;
+  margin-top: 2vmin;
+  margin-left: 2vmin;
+  height: 24.6vmin;
+  width: 24.6vmin;
+
+}
+
+/*#card1 {*/
+/*  left: 11.8vw;*/
+/*}*/
+
+/*#card2 {*/
+/*  left: calc(50vw - 14.3vmin);*/
+/*}*/
+
+/*#card3 {*/
+/*  right: 11.8vw;*/
+/*}*/
+
+.teamCardName {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 140%;
+  margin-left: -20%;
+  height: 3.4vmin;
+  margin-top: 1vmin;
+  margin-bottom: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.8vmin;
+  line-height: 3.4vmin;
+
+  background: linear-gradient(122.94deg, #343AD8 27.44%, #00A3E9 69.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.teamCardInfo {
+  position: relative;
+  width: 86%;
+  height: 4.3vmin;
+  margin-top: 0.6vmin;
+  margin-left: 7%;
+  margin-bottom: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.7vmin;
+  line-height: 2.1vmin;
+
+  color: rgba(76, 81, 219, 0.72);
+}
+
+.teamCardDescription {
+  position: relative;
+  width: 86%;
+  height: 4.3vmin;
+  margin-top: 0.6vmin;
+  margin-left: 7%;
+  margin-bottom: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7vmin;
+  line-height: 2.1vmin;
+
+  color: #000000;
+}
+
+#telegramIcon {
+  height: 4vmin;
+  width: 4vmin;
+  margin-left: 6.9%;
+}
+
+.cardContact {
+  display: flex;
+  width: 100%;
+  height: 4vmin;
+  align-items: center;
+  margin-top: 2vmin;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.cardContactText {
+  margin-left: 1vmin;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7vmin;
+  line-height: 1.7vmin;
+  color: #000000;
+}
+
+#telephoneIcon {
+  height: 4vmin;
+  width: 4vmin;
+  margin-left: 6.9%;
 }
 
 
