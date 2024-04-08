@@ -94,7 +94,8 @@
 #description {
   z-index: 3;
   position: absolute;
-  width: 90vmin;
+  /*width: 90vmin;*/
+  width: 65vw;
   height: 9.4vmin;
   left: 6.9vw;
   top: calc(33.5vh + 11.4vmin + 1.27vmin);
@@ -104,6 +105,8 @@
   font-size: 2vmin;
   line-height: 2.2vmin;
   color: #000000;
+/*  сделать чтобы текст был по центру между названием и кнопками*/
+/*  сделать чтобы он при широком мониторе был обрублен по 90vmin*/
 }
 
 #startWork {

@@ -35,18 +35,25 @@ export class TeamPageComponent {
     },
     {
       id: 2,
-      name: 'Дмитрий Матвеев',
+      name: 'Димон',
       info: 'Lorem ipsum dolor sit amet, consectetur',
       description: 'Lorem ipsum dolor sit amet, consectetur',
-      telegram: '@SloggerD',
-      telegramLink: 'https://t.me/SloggerD',
       phone: '+7 (922) 366-51-38',
       phoneLink: 'tel:+79223665138',
       image: 'assets/team_icon.png'
     },
     {
       id: 3,
-      name: 'Дмитрий Матвеев',
+      name: 'Дмитрий',
+      info: 'Lorem ipsum dolor sit amet, consectetur',
+      description: 'Lorem ipsum dolor sit amet, consectetur',
+      telegram: '@SloggerD',
+      telegramLink: 'https://t.me/SloggerD',
+      image: 'assets/team_icon.png'
+    },
+    {
+      id: 4,
+      name: 'Димочка',
       info: 'Lorem ipsum dolor sit amet, consectetur',
       description: 'Lorem ipsum dolor sit amet, consectetur',
       telegram: '@SloggerD',
@@ -54,7 +61,7 @@ export class TeamPageComponent {
       phone: '+7 (922) 366-51-38',
       phoneLink: 'tel:+79223665138',
       image: 'assets/team_icon.png'
-    },
+    }
   ];
 }
 export interface CarouselItems {
